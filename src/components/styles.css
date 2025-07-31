@@ -1,0 +1,46 @@
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: #fefcf9;
+  color: #333;
+  text-align: center;
+}
+
+.hero {
+  padding: 4rem 1rem 2rem;
+  background: linear-gradient(to right, #dbece5, #f5f5dc);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.arch-card {
+  background: #fff;
+  border-radius: 2rem;
+  width: 260px;
+  padding: 1.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.arch-card:hover {
+  transform: translateY(-6px);
+}
+
+.arch-image {
+  width: 100%;
+  height: 160px;
+  border-radius: 0 0 2rem 2rem;
+  background-size: cover;
+  background-position: center;
+  clip-path: ellipse(100% 85% at 50% 15%);
+  margin-bottom: 1rem;
+}

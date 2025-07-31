@@ -1,0 +1,111 @@
+.projectSection {
+  background: white;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8rem 2rem 6rem 2rem; /* ↑ increased top padding */
+  margin-top: 4rem; /* 🪄 optional: add even more space */
+  border-radius: 3rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+
+.projectTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-family: 'DM Serif Display', serif;
+  color: rgb(45, 27, 105);
+}
+
+.projectCards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projectCard {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 2rem;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+  text-align: center;
+  position: relative;
+  backdrop-filter: blur(12px);
+  animation: floatCard 5s ease-in-out infinite;
+  color: #333;
+}
+
+.projectCard h3 {
+  color: #2d1b69;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.projectCard p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.projectCard:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.projectWrapper {
+  background: none;               /* ❌ Remove gradient */
+  backdrop-filter: none;          /* ❌ Remove blur */
+  box-shadow: none;               /* ❌ Remove shadow */
+  border-radius: 0;               /* ❌ Remove rounded corners */
+  padding: 0;                     /* Optional: shrink padding */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border-radius: 2rem 2rem 0 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  clip-path: ellipse(100% 85% at 50% 15%);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.projectCard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.05);
+}
+
+.h2{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: 'DM Serif Display', serif;
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
