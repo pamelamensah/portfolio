@@ -1,0 +1,263 @@
+.container {
+  min-height: 100vh;
+  color: white;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  color: rgb(45, 27, 105);
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.backButton:hover {
+  color: #90caf9;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #64b5f6, #e91e63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #b0bec5;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.videoSection {
+  margin-bottom: 4rem;
+}
+
+.videoSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: rgb(45, 27, 105);
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.video {
+  width: 100%;
+  height: 450px;
+  border-radius: 1rem;
+  object-fit: cover;
+  background: #000;
+}
+
+.videoFallback {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.videoFallback p {
+  margin: 0;
+  color: #b0bec5;
+}
+
+.videoFallback a {
+  color: #64b5f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.videoFallback a:hover {
+  text-decoration: underline;
+}
+
+.downloadSection {
+  margin-bottom: 4rem;
+}
+
+.downloadSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #64b5f6;
+}
+
+.downloadText {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #b0bec5;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.downloadCard {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.howToPlaySection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.howToPlaySection h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: rgb(45, 27, 105);
+  text-align: center;
+}
+
+.instructionsCard {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 600px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(100, 181, 246, 0.3);
+}
+
+.instructionsCard ol {
+  padding-left: 1.5rem;
+  line-height: 2;
+  text-align: left;
+  margin: 0;
+}
+
+.instructionsCard li {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.instructionsCard code {
+  background: rgba(100, 181, 246, 0.2);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.4rem;
+  font-family: 'Courier New', monospace;
+  color: #1976d2;
+  font-weight: bold;
+  border: 1px solid rgba(100, 181, 246, 0.3);
+}
+
+.downloadButton {
+  display: block;
+  width: 100%;
+  background: linear-gradient(45deg, #64b5f6, #e91e63);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.downloadButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(100, 181, 246, 0.4);
+}
+
+.featuresSection {
+  margin-bottom: 2rem;
+}
+
+.featuresSection h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #64b5f6;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #64b5f6;
+}
+
+.feature p {
+  color: #b0bec5;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .video {
+    height: 250px;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .downloadCard {
+    padding: 1.5rem;
+  }
+} 

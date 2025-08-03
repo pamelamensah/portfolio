@@ -25,7 +25,7 @@ const AboutSection = () => {
     >
       <h2 style={{ fontSize: '2.8rem', marginBottom: '1.5rem', color: '#2d1b69', textShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>🌸 About Me</h2>
       <p style={{ fontSize: '1.1rem', color: '#333', lineHeight: '1.6', marginBottom: '1rem' }}>
-      I am Pamela. A developer with a designer's eye and an engineer's precision. I build emotionally intelligent, high-performance interfaces that merge usability with aesthetic clarity. My work sits at the intersection of visual storytelling and systems thinking — optimized for both delight and data ✨.
+      Hi, I am Pamela. Thanks for clicking on my website. I am a software engineer with a passion for building user-friendly, high-performance interfaces. I am currently a student at Loyola University Chicago, where I am studying Computer Science.
       </p>
 
       <div style={{ marginTop: '2.5rem', display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>

@@ -17,6 +17,12 @@ const projects = [
     link: 'https://kudos-board3.onrender.com/',
   },
   {
+    title: 'Masquerader',
+    description: 'An immersive murder mystery game where you navigate through shadows and deception.',
+    image: '/masquerader.png',
+    link: '/masquerader',
+  },
+  {
     title: 'Flixster',
     description: 'A movie recommendation app that uses the TMDB API.',
     image: '/flixster.png',
